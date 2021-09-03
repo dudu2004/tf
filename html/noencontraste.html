@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="icon" type="imagen/jpg" href="C:\Users\Usuario\Desktop\trabajo unidad 4\html\img\icono.png">
+    <title>ayuda_producto!</title>
+    <style>
+ .nav-phonestore{
+	background-color: #000;
+	height: 55px;
+	position: relative;
+}
+body{
+    margin: auto;
+}
+.letra{
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 50px;
+    float: left;
+    height: 55px;
+    width: 30%;
+    line-height: 55px;   
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.beba{
+    font-size: 28px;
+    width: 550px;
+    height: 220px;
+    color: white;
+    text-align: center;
+    border: 4px solid black;
+    margin-left: 400px;
+}
+.lunes{
+    font-size: 22px;
+    background: linear-gradient(to right, #6444f3 , #000000);
+}
+.bebita{
+    color: cornsilk;
+    font-size: 28px;
+
+}
+.beto{
+    margin-left: 37%;
+}
+.cinco{
+    margin-left: 15%;
+    width: 100px;
+    height: 45px;
+}
+    </style>
+  </head>
+  <body background="img/natu.jpg"></body>
+  <body>
+  
+    <nav class="full-reset nav-phonestore">
+        <div class=" letra">
+            Dale Dakovi !)
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <h1>  ¿ NO ENCONTRASTE TU PRODUCTO ? </h1> 
+        <br>
+    </div>
+    <div class="beba"   >
+        <p class="bebita" >Los productos que que no se encuentran al servicio del cliente lo iremos incorporando 
+            a medida que va pasando el tiempo, gracias por visitar nuestra página </p>
+    </div>
+   <br>
+    <div class="beto">
+        <form name="form1">
+            <textarea id="curriculum" rows="10" cols="50"></textarea><br>
+            <input type="button" class="cinco" value="ENVIAR" onclick="quejas()">
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script>
+        function quejas(){
+            if(document.form1.curriculum.value){
+                alert ("Gracias por enviarnos tus comentarios, los usaremos para mejorar esta función en un futuro (no muy distante).");
+            } 
+        }
+    </script>
+  </body>
+</html>

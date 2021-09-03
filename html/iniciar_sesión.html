@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagen/jpg" href="C:\Users\Usuario\Desktop\trabajo unidad 4\html\img\icono.png">
+    <title>Document</title>
+    <link href="form.tra.css" rel="stylesheet">
+    <style>
+        .uno {
+            font-size: 28px;
+            color: black;
+        }
+
+        .full-reset {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .nav-phonestore {
+            background-color: black;
+            height: 55px;
+            position: relative;
+
+        }
+
+        .tamaño1 {
+            height: 390px;
+            width: 500px;
+            background-color: whitesmoke;
+            text-align: center;
+            margin-top: 40px;
+            margin-left: 450px;
+            border: 5px solid black;
+        }
+
+        .boton {
+            width: 150px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            margin-top: 0px;
+        }
+
+        .letra {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+            float: left;
+            height: 55px;
+            width: 30%;
+            line-height: 55px;
+            color: white;
+            text-align: center;
+        }
+
+        .amor {
+            color: white;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+    </style>
+</head>
+
+<body background="img/2505429.jpg"></body>
+
+<body>
+    <nav class="full-reset nav-phonestore">
+        <div class=" letra">
+            Dale Dakovi !)
+        </div>
+
+    </nav>
+
+    <form class="tamaño1">
+        <hr>
+        <p class="uno"> <b> INICIAR SESIÓN </b> </p>
+        <hr>
+        <div class="formulario_grupo" id="formulario_email">
+            <label for=email class="form_label"><b> CORREO ELECTRONICO</b> </label>
+            <div class="formulario-grupo-input">
+                <input type="text" class="form_input" name="email" id="email" placeholder="leaosuarez2001@gmail.com"
+                    title="ingrese correctamente su email" required>
+            </div>
+            <p class="error-dato"></p>
+        </div>
+
+
+        <div class="form-row">
+            <label for=password class="form_label"> <b> CONTRASEÑA </b> </label>
+            <div class="col">
+                <input class="form_input" type="password" name="password" id="password" placeholder="CONTRASEÑA"
+                    title="ingrese correctamente su contraseña" required>
+            </div>
+            <div class="col">
+                <input class="boton-checkbox" type="checkbox" onclick="mostrarContrasena()"> => Ver contraseña
+            </div>
+
+
+            <br>
+
+            <div class="enviar-dato123" id="enviar-dato123">
+                <button class="boton" id="boton"> <a class="amor" href="pagina_principal.html">INGRESAR </a></button>
+            </div>
+            <br>
+            <a href="olvidé_contra.html">Olvidé mi contraseña</a>
+
+    </form>
+
+    <script>
+        function mostrarContrasena() {
+            var tipo = document.getElementById("password");
+            if (tipo.type == "password") {
+                tipo.type = "text";
+            } else {
+                tipo.type = "password";
+            }
+        }
+        function button123() {
+            var leonardo = document.getElementById("boton2")
+
+        }
+
+    </script>
+</body>
+
+</html>

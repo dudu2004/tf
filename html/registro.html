@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/form.tra.css" rel="stylesheet">
+    <link rel="icon" type="imagen/jpg" href="C:\Users\Usuario\Desktop\trabajo unidad 4\html\img\icono.png">
+    <script src="registro.js"></script>
+    <style>
+        .tamaño1 {
+            height: 730px;
+            width: 500px;
+            background-color: whitesmoke;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 140px;
+            border: 5px solid black;
+        }
+
+        .uno {
+
+            font-size: 50px;
+            color: black;
+
+        }
+
+        .boton {
+            width: 150px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            margin-left: 180px;
+        }
+
+        .boton :active {
+            transform: scale(8);
+        }
+
+        .amor {
+            color: white;
+            font-size: 45px;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body background="img/2505429.jpg"></body>
+
+<body>
+    <nav class="full-reset nav-phonestore">
+        <div class=" letra">
+            Dale Dakovi !)
+        </div>
+    </nav>
+    <center>
+        <div class="tamaño1">
+
+
+            <form action="" class="" method="POST" id="" onsubmit="javascript:validar(); ">
+
+                <p> <b class="uno"> REGISTRO </b> </p>
+
+                <hr>
+                <div class="formulario_grupo" id="formulario_nombre">
+                    <div class="formulario-grupo-input">
+                        <label for="txtNombres" class="form_label"> <b>NOMBRE</b> </label>
+                        <input type=text id="txtNombres" name="txtNombres " class="form_input"
+                            title="Ingrese  correctamente su nombre" required placeholder="NOMBRE" />
+
+                    </div>
+                    <p class="error-dato"></p>
+                </div>
+                <div class="formulario_grupo" id="form_Nombre">
+                    <label for=apellido class="form_label"><b> APELLIDO </b> </label>
+                    <div class="formulario-grupo-input">
+                        <input type="text" class="form_input" name="apellido" id="apellido"
+                            title="Ingrese sus dos apellidos" required placeholder="APELLIDOS">
+                    </div>
+                    <p class="error-dato"></p>
+                </div>
+                <div class="formulario_grupo" id="formulario_telefono">
+                    <label for=telefono class="form_label"> <b> TELÉFONO </b> </label>
+                    <div class="formulario-grupo-input">
+                        <input type="text" class="form_input" name="telefono" id="telefono" title="Ingrese solo números"
+                            required placeholder="TELÉFONO">
+                    </div>
+                    <p class="error-dato"></p>
+                </div>
+
+                <div class="formulario_grupo" id="formulario_fecha">
+                    <label for=fecha class="form_label"><b> FECHA DE NACIMIENTO </b> </label>
+
+                    <input type="date" class="form_input" name="fecha" id="fecha" placeholder="fecha"
+                        title="Ingrese su fecha de nacimiento" required>
+
+                    <p class="error-dato"></p>
+                </div>
+
+
+                <div class="formulario_grupo" id="formulario_email">
+                    <label for=email class="form_label"><b> CORREO ELECTRONICO</b> </label>
+                    <div class="formulario-grupo-input">
+                        <input type="text" class="form_input" name="email" id="email" placeholder="EMAIL"
+                            title="ingrese correctamente su email" required>
+                    </div>
+                    <p class="error-dato"></p>
+                </div>
+
+
+
+                <div class="form-row">
+                    <label for=password class="form_label"> <b> CONTRASEÑA </b> </label>
+                    <div class="col">
+                        <input class="form_input" type="password" name="password" id="password" placeholder="CONTRASEÑA"
+                            title="Una contraseña válida es un conjuto de caracteres" required>
+                    </div>
+                    <br>
+                    <div class="col">
+                        <input class="boton-checkbox" type="checkbox" onclick="mostrarContrasena()"> => Ver contraseña
+                    </div>
+                    <br>
+
+
+                    <div class="formulario_grupo" id="formulario_usuario">
+                        <div class="formulario-grupo-input">
+                            <label for="sexo" class="form_label"><b> SEXO </b> </label>
+                            <input type="radio" class="radio1" name="sexo" id="sexo" required>Hombre
+                            <input type="radio" class="radio1" name="sexo" id="sexo" required>Mujer
+                        </div>
+                    </div>
+
+                    <br>
+
+
+                    <div class="enviar-dato1234" id="enviar-dato123"></div>
+
+                    <input class="boton" type="submit" value="REGISTRATE" />
+                </div>
+
+
+
+
+
+
+            </form>
+        </div>
+    </center>
+    <script>
+
+        function mostrarContrasena() {
+            var tipo = document.getElementById("password");
+            if (tipo.type == "password") {
+                tipo.type = "text";
+            } else {
+                tipo.type = "password";
+            }
+        }
+        function validar() {
+            var txt = document.getElementById("txtNombres");
+            alert("USTED SE REGISTRÓ EXITOSAMENTE, MUCHAS GRACIAS POR SU PREFERENCIA");
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>

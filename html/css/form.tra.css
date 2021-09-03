@@ -1,0 +1,123 @@
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 25px;
+}
+
+.boton{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 25px;
+}
+
+.form_label{
+display: block;
+padding: 8px;
+}
+.form_input{
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+
+}
+.form_input:focus{
+    border: 5px solid red ;
+}
+.error-dato{
+    font-size: 13px;
+    margin-bottom: 0;
+   
+
+}
+.error-dato-activo{
+    display: block;
+}
+.boton-checkbox{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.enviar-dato{
+    height: 45px;
+    line-height: 45px;
+    border-radius: 5px;
+    background-color: black;
+    color: red;
+    width: 100px;
+    margin-left: 140px;
+}
+.full-reset{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.nav-phonestore{
+	background-color: #000;
+	height: 55px;
+	position: relative;
+}
+
+.letra{
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 50px;
+    float: left;
+    height: 55px;
+    width: 30%;
+    line-height: 55px;   
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.full-reset{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.nav-phonestore{
+	background-color: #000;
+	height: 55px;
+	position: relative;
+}
+
+.letra{
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 50px;
+    float: left;
+    height: 55px;
+    width: 30%;
+    line-height: 55px;   
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.tamaño{
+    height: 790px;
+    width: 500px;
+   background-color: whitesmoke;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 120px;
+    border: 5px solid black; 
+}
+.boton{
+            width: 150px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            
+           
+	
+        }
+        .amor{
+            color: white;
+            font-size: 20px;
+        }
+
+.exitoso{
+    font-size: 16px;
+    color: red;
+    display: none;
+}

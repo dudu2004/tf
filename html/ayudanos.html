@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagen/jpg" href="C:\Users\Usuario\Desktop\trabajo unidad 4\html\img\icono.png">
+    <title>Document</title>
+    <style>
+        .nav-phonestore {
+            background-color: #000;
+            height: 55px;
+            position: relative;
+        }
+
+        body {
+            margin: auto;
+        }
+
+        .letra {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+            float: left;
+            height: 55px;
+            width: 30%;
+            line-height: 55px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        .bebe {
+            color: red;
+            font-size: 48px;
+            text-align: center;
+
+        }
+
+        h2 {
+            color: rgb(2, 0, 0);
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .bebesito {
+            text-align: center;
+        }
+
+        .leao {
+            width: 800px;
+            height: 270px;
+            margin-left: 280px;
+
+        }
+    </style>
+</head>
+
+<body background="img/2505429.jpg"></body>
+
+<body>
+    <script>
+        function quejas() {
+            if (document.form1.curriculum.value) {
+                alert("Su mensaje fue enviada correctamente");
+            }
+        }
+    </script>
+
+    <nav class="full-reset nav-phonestore">
+        <div class=" letra">
+            Dale Dakovi !)
+        </div>
+    </nav>
+    <div class="leao" style="background-image: url(fondodiv5.jpg);">
+        <p class="bebe">AYUDENOS A MEJORAR NUESTRO SERVICIO</p>
+        <hr>
+        <h2>En esta página usted nos hará llegar su sugerencia, <br>
+            para nosotros poder mejorar y asi brindarle un servicio de calidad
+        </h2>
+    </div>
+    <br>
+    <div class="bebesito">
+        <form name="form1">
+            <textarea id="curriculum" rows="10" cols="50"></textarea><br>
+            <br>
+            <input type="button" class="cinco" value="ENVIAR" onclick="quejas()">
+        </form>
+    </div>
+</body>
+
+</html>

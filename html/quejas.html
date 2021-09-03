@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagen/jpg" href="C:\Users\Usuario\Desktop\trabajo unidad 4\html\img\icono.png">
+    <title>Document</title>
+    <style>
+        .nav-phonestore {
+            background-color: #000;
+            height: 55px;
+            position: relative;
+        }
+
+        body {
+            margin: auto;
+        }
+
+        .letra {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+            float: left;
+            height: 55px;
+            width: 30%;
+            line-height: 55px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        .bebe {
+            color: rgb(21, 9, 92);
+            font-size: 48px;
+            text-align: center;
+
+        }
+
+        h2 {
+            color: black;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .bebesito {
+            text-align: center;
+        }
+
+        .leao {
+            width: 800px;
+            height: 360px;
+            margin-left: 280px;
+            border: 4px solid black;
+
+        }
+
+        textarea {
+            width: 600px;
+            height: 100px;
+            position: static
+        }
+    </style>
+</head>
+
+<body background="img/2505429.jpg"></body>
+<header>
+
+    <body>
+        <script>
+            function quejas() {
+                if (document.form1.curriculum.value) {
+                    alert("Su mensaje fue enviada correctamente");
+                }
+            }
+        </script>
+
+        <nav class="full-reset nav-phonestore">
+            <div class=" letra">
+                Dale Dakovi !)
+            </div>
+        </nav>
+        <br>
+        <div class="leao">
+            <p class="bebe">USTED PUEDE PRESENTAR SUS QUEJAS RESPECTO A LA TIENDA </p>
+            <hr>
+            <h2>En esta página usted tendrá acceso para que pueda presentar un reclamo o una queja, en el cual su
+                mensaje <br>
+                será observado y evaluado para que en la proxima oportunidad no tenga ninguna queja </h2>
+        </div>
+        <br>
+        <div class="bebesito">
+            <form name="form1">
+                <textarea id="curriculum" rows="10" cols="50"></textarea><br>
+                <br>
+                <input type="button" class="cinco" value="ENVIAR" onclick="quejas()">
+            </form>
+        </div>
+
+    </body>
+
+</html>
